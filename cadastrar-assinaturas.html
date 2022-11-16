@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-cadastrar-assinatura.css" />
+    <script src="script.js"></script>
+    <title>Cadastro Academia</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="form">
+        <fieldset>
+          <legend align="center">CADASTRO DE ASSINATURA</legend>
+          <div class="inputBox">
+            <label for="data-inicio">Data de Inicio</label>
+            <input
+              type="date"
+              name="data-inicio"
+              class="inputUser"
+              id="data-inicio"
+              required
+            />
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              id="plano"
+              name="plano"
+              class="inputUser"
+              required
+            />
+            <label for="plano" class="inputLabel">Nome do Plano</label>
+          </div>
+          <div class="inputBox">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="inputUser"
+              required
+            />
+            <label for="nome" class="inputLabel">Nome do Cliente</label>
+          </div>
+          <br />
+          <button id="submit" onclick="cadastrarAssinatura()">
+            Cadastrar
+          </button>
+          <p style="padding-top: 10px; color: white">
+            Ir para
+            <a id="submit-listar" href="listar.html">listagem</a>
+          </p>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
